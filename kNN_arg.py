@@ -540,7 +540,7 @@ def main():
     vals_test_df.to_csv('vals_test_df_test_type{dbname}.csv'.format(dbname=testType), index=False)
     print("test size", vals_test_df.shape)
 
-    method_no = 5
+    method_no = 6
 
     if method_no == 1:
         imputed_file_name = "KNN_imputated_catalogueData1.csv"
@@ -557,7 +557,7 @@ def main():
 
     if imputed_file_name != "None":
         if not os.path.isfile(imputed_file_name):
-            sourceFolderPath = "C:/Users/Rabina Padhy/PycharmProjects/MP2/Results/"
+            sourceFolderPath = "Source File Path/Results/"
             destFolderPath = sourceFolderPath + folderpath + "/"
             shutil.move(os.path.join(sourceFolderPath, imputed_file_name), destFolderPath)
 
